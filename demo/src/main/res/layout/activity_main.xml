@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <io.github.leibnik.wechatradiobar.WeChatRadioGroup xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <io.github.leibnik.wechatradiobar.WeChatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="首页"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/chats"
+            app:focus_color="#50ba26"
+            app:focus_icon="@drawable/chats_green"
+            />
+
+        <io.github.leibnik.wechatradiobar.WeChatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="共享"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/contacts"
+            app:focus_color="#50ba26"
+            app:focus_icon="@drawable/contacts_green"
+            />
+
+        <io.github.leibnik.wechatradiobar.WeChatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="预约"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/discover"
+            app:focus_color="#50ba26"
+            app:focus_icon="@drawable/discover_green"
+            />
+
+        <io.github.leibnik.wechatradiobar.WeChatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="我"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/about_me"
+            app:focus_color="#50ba26"
+            app:focus_icon="@drawable/about_me_green"
+            />
+    </io.github.leibnik.wechatradiobar.WeChatRadioGroup>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/radiogroup"
+        android:background="#555"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line"
+        />
+</RelativeLayout>
