@@ -1,1 +1,1 @@
-include ':demo', ':wechatradiobar'
+include ':app'
